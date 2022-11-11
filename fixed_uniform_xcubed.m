@@ -158,6 +158,6 @@ function [minval xboundary]=nonstr_recursion_1(xval,xind,n,Xn,Dn,Dnxoxval,D1val,
     minval=min(arr);%returning minimum distortion value
     in=find(arr==minval);
     if length(in)~=1
-        in
+        in;
     end
     xboundary=xval(alpharange(in(1)));
